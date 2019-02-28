@@ -138,7 +138,7 @@ are verified to support semantic line breaks:
 
 - [AsciiDoc][asciidoc]
 - [CommonMark][commonmark]
-- [Haddock Markup][haddock-markdown]
+- [Haddock][haddock]
 - [Markdown][markdown]
 - [MediaWiki][mediawiki]
 - [MultiMarkdown][multimarkdown]
@@ -216,7 +216,7 @@ If you’d like to leave feedback, please
 [rfc2119]: https://www.ietf.org/rfc/rfc2119
 [asciidoc]: http://asciidoc.org
 [commonmark]: http://commonmark.org
-[haddock-marku]: https://www.haskell.org/haddock/doc/html/
+[haddock]: https://www.haskell.org/haddock/doc/html/
 [markdown]: https://daringfireball.net/projects/markdown/
 [mediawiki]: https://www.mediawiki.org/wiki/Help:Formatting
 [multimarkdown]: http://fletcherpenney.net/multimarkdown/
