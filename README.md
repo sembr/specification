@@ -145,6 +145,8 @@ are verified to support semantic line breaks:
 - [OrgMode][orgmode]
 - [reStructuredText][restructuredtext]
 
+</dd>
+
 <dt>How do I know when to add semantic line breaks?</dt>
 <dd>
 
@@ -194,6 +196,8 @@ by editors that automatically strip trailing whitespace.
 
 ## About
 
+The Semantic Line Break specification is authored by [Mattt][mattt].
+
 This specification is an attempt to encapsulate best practices
 that I've encountered while working on technical writing teams
 at several different companies.
@@ -222,6 +226,7 @@ If you’d like to leave feedback, please
 [multimarkdown]: http://fletcherpenney.net/multimarkdown/
 [orgmode]: http://orgmode.org
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
+[mattt]: https://mat.tt
 [semver]: http://semver.org
 [one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 [github-issues]: https://github.com/sembr/specification/issues
