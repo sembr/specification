@@ -42,11 +42,11 @@ All human beings are born free and equal in dignity and rights.
 They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
 </pre>
 
-We can further clarify the source text by adding a line break after
-the clause "with reason and conscience".
-This helps to distinguish between the "and" used as a
-coordinating conjunctions between "reason and conscience"
-and the "and" used as a subordinating conjunction with the clause
+We can further clarify the source text by adding a line break
+after the clause "with reason and conscience".
+This helps to distinguish between
+the "and" used as a coordinating conjunction between "reason and conscience" and
+the "and" used as a subordinating conjunction with the clause
 "and should act towards one another in a spirit of brotherhood":
 
 <pre>
@@ -117,7 +117,7 @@ semantic line breaks allow the physical structure of text
 to reflect the logical structure of the thoughts that produce them.
 
 For an **editor**,
-semantic line breaks make it easier to identify grammatical mistakes,
+semantic line breaks make it easier to identify grammatical mistakes
 and find opportunities to simplify and clarify without altering original intent.
 
 For a **reader**,
@@ -152,7 +152,7 @@ Try reading the text out loud,
 as if you were speaking to an audience.
 Anywhere that you pause for emphasis
 or to take a breath
-is a usually a good candidate for a semantic line break.
+is usually a good candidate for a semantic line break.
 
 </dd>
 
@@ -162,7 +162,7 @@ is a usually a good candidate for a semantic line break.
 There is no need to rewrite or reformat an entire document all at once.
 The recommended migration path for an existing document
 is to use semantic line breaks for any new or revised text.
-This is often a great opportunity to make an editorial pass over content,
+This is often a great opportunity to make an editorial pass over content
 since the distinctive appearance of text with semantic line breaks
 allows you to quickly identify content that has not been updated.
 
@@ -188,7 +188,7 @@ $ git diff --word-diff
 You can add a hard line break with the `<br/>` element.
 Although CommonMark and other lightweight markup languages
 allow trailing spaces to indicate breaks between consecutive lines,
-this syntax is incompatible with 
+this syntax is incompatible with
 editors that automatically strip trailing whitespace.
 
 </dd>
