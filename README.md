@@ -2,24 +2,22 @@
 
 ## Summary
 
-When writing text using a compatible markup language,
-add single line breaks after substantial units of thought.
+When writing text with a compatible markup language,
+add a line break after each substantial unit of thought.
 
 ## Introduction
 
-_Semantic Line Breaks_ describes a set of conventions by which
+_Semantic Line Breaks_ describe a set of conventions by which
 writers insert single line breaks at semantic boundaries
 without affecting the final rendered output.
 
-Many of the most popular lightweight markup language renderers,
+Many lightweight markup language renderers,
 including
 [CommonMark][commonmark]
 [reStructuredText][restructuredtext], and
 [AsciiDoc][asciidoc],
 join consecutive lines in a paragraph with a space,
-allowing semantic line breaks to be used.
-In addition, semantic line breaks can be used in certain contexts
-of HTML, XML, and other structured markup language documents.
+allowing line breaks to be used as semantic delimiters.
 
 To better understand the benefit of semantic line breaks,
 consider the following paragraph from the
