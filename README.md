@@ -19,13 +19,13 @@ including
 join consecutive lines in a paragraph with a space,
 allowing line breaks to be used as semantic delimiters.
 
-To better understand the benefit of semantic line breaks,
+To understand the benefit of semantic line breaks,
 consider the following paragraph from the
 [_Universal Declaration of Human Rights_][udhr]:
 
 > All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
 
-Without any semantic line breaks,
+Without any line breaks,
 this paragraph appears as a long, continuous line of text
 (which may be automatically wrapped at a fixed column length,
 depending on your editor settings):
@@ -34,7 +34,7 @@ depending on your editor settings):
 All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
 </pre>
 
-Adding a semantic line break after each sentence
+Adding a line break after each sentence
 makes it easier to understand the shape and structure of the source text:
 
 <pre>
@@ -175,18 +175,21 @@ The default Git diff options emphasize line changes
 in a way that may obscure certain revisions to text with semantic line breaks.
 You can pass the `--word-diff` option to the `git diff` command
 for better results:
-`$ git diff --word-diff`
+
+```terminal
+$ git diff --word-diff
+```
 
 </dd>
 
 <dt>How do I force a line break?</dt>
 <dd>
 
-The easiest way to force a line break is to insert a `<br/>` element.
-Although some lightweight markup languages insert a line break
-after lines with two trailing spaces,
-this may be inadvertently broken
-by editors that automatically strip trailing whitespace.
+You can add a hard line break with the `<br/>` element.
+Although CommonMark and other lightweight markup languages
+allow trailing spaces to indicate breaks between consecutive lines,
+this syntax is incompatible with 
+editors that automatically strip trailing whitespace.
 
 </dd>
 
