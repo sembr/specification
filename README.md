@@ -7,17 +7,21 @@ add a line break after each substantial unit of thought.
 
 ## Introduction
 
-_Semantic Line Breaks_ describe a set of conventions by which
-writers insert single line breaks at semantic boundaries
-without affecting the final rendered output.
+_Semantic Line Breaks_ describe a set of conventions
+for using insensitive vertical whitespace
+to structure prose along semantic boundaries.
 
-Many lightweight markup language renderers,
+Many lightweight markup languages,
 including
-[CommonMark][commonmark]
+[Markdown][markdown]
 [reStructuredText][restructuredtext], and
 [AsciiDoc][asciidoc],
-join consecutive lines in a paragraph with a space,
-allowing line breaks to be used as semantic delimiters.
+join consecutive lines with a space.
+This is also true of conventional markup languages
+like HTML and XML in most contexts.
+This behavior allows line breaks to be used as semantic delimiters,
+making prose easier to author, edit, and read in source ---
+without affecting the rendered output.
 
 To understand the benefit of semantic line breaks,
 consider the following paragraph from the
@@ -25,8 +29,8 @@ consider the following paragraph from the
 
 > All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
 
-Without any line breaks,
-this paragraph appears as a long, continuous line of text
+Without any line breaks at all,
+this paragraph appears in source as a long, continuous line of text
 (which may be automatically wrapped at a fixed column length,
 depending on your editor settings):
 
@@ -199,9 +203,9 @@ editors that automatically strip trailing whitespace.
 
 The Semantic Line Break specification is authored by [Mattt][mattt].
 
-This specification is an attempt to encapsulate best practices
-that I've encountered while working on technical writing teams
-at several different companies.
+This specification is an attempt to encapsulate
+best practices that I've encountered
+while working on technical writing teams at several different companies.
 It follows the general structure of the
 [Semantic Versioning specification][semver] by Tom Preston-Werner.
 
@@ -217,18 +221,18 @@ If you’d like to leave feedback, please
 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)][cc-by-4.0]
 
-[udhr]: http://www.un.org/en/universal-declaration-human-rights/
-[rfc2119]: https://www.ietf.org/rfc/rfc2119
 [asciidoc]: http://asciidoc.org
+[cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
 [commonmark]: http://commonmark.org
+[github-issues]: https://github.com/sembr/specification/issues
 [haddock]: https://www.haskell.org/haddock/doc/html/
 [markdown]: https://daringfireball.net/projects/markdown/
+[mattt]: https://mat.tt
 [mediawiki]: https://www.mediawiki.org/wiki/Help:Formatting
 [multimarkdown]: http://fletcherpenney.net/multimarkdown/
+[one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 [orgmode]: http://orgmode.org
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
-[mattt]: https://mat.tt
+[rfc2119]: https://www.ietf.org/rfc/rfc2119
 [semver]: http://semver.org
-[one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
-[github-issues]: https://github.com/sembr/specification/issues
-[cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
+[udhr]: http://www.un.org/en/universal-declaration-human-rights/
