@@ -13,7 +13,7 @@ to structure prose along semantic boundaries.
 
 Many lightweight markup languages,
 including
-[Markdown][markdown]
+[Markdown][markdown],
 [reStructuredText][restructuredtext], and
 [AsciiDoc][asciidoc],
 join consecutive lines with a space.
