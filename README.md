@@ -17,8 +17,8 @@ including
 [reStructuredText][restructuredtext], and
 [AsciiDoc][asciidoc],
 join consecutive lines with a space.
-This is also true of conventional markup languages
-like HTML and XML in most contexts.
+Conventional markup languages like HTML and XML
+exhibit a similar behavior in particular contexts.
 This behavior allows line breaks to be used as semantic delimiters,
 making prose easier to author, edit, and read in source ---
 without affecting the rendered output.
