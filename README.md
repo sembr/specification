@@ -233,6 +233,6 @@ If you’d like to leave feedback, please
 [one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 [orgmode]: http://orgmode.org
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
-[rfc2119]: https://www.ietf.org/rfc/rfc2119
+[rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
 [semver]: http://semver.org
 [udhr]: http://www.un.org/en/universal-declaration-human-rights/
