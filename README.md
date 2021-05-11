@@ -207,11 +207,47 @@ npx skills add https://sembr.org
 <dt>How do I force a line break?</dt>
 <dd>
 
-You can add a hard line break with the `<br/>` element.
-Although CommonMark and other lightweight markup languages
-allow trailing spaces to indicate breaks between consecutive lines,
-this syntax is incompatible with
-editors that automatically strip trailing whitespace.
+Some lightweight markup languages provide a dedicated syntax for line breaks,
+some support line breaks using the inline HTML element `<br>`\*,
+and some do both.
+
+<dl>
+
+<dt>AsciiDoc</dt>
+<dd>**Syntax**: A trailing space followed by a plus sign (`+`)</dd>
+<dd>**Inline HTML**: Not supported</dd>
+
+<dt>CommonMark</dt>
+<dd>**Syntax**: A trailing backslash (`\`) \*\*</dd>
+<dd>**Inline HTML**: Supported</dd>
+
+<dt>Markdown</dt>
+<dd>**Syntax**: None</dd>
+<dd>**Inline HTML**: Supported</dd>
+
+<dt>MediaWiki</dt>
+<dd>**Syntax**: None</dd>
+<dd>**Inline HTML**: Supported</dd>
+
+<dt>OrgMode</dt>
+<dd>**Syntax**: Two trailing backslashes (`\\`)</dd>
+<dd>**Inline HTML**: Not supported</dd>
+
+<dt>reStructuredText</dt>
+<dd>**Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]</dd>
+<dd>**Inline HTML**: Not supported</dd>
+
+> \*
+> The _Line Break_ element is represented as
+> an empty tag (`<br>`) in HTML,
+> and either a tag pair (`<br></br>`) or
+> a self-closing tag (`<br />`) in XHTML.
+
+> \*\*
+> Although CommonMark allows the use of trailing spaces
+> to indicate breaks between consecutive lines,
+> this syntax is incompatible with
+> tools that automatically strip trailing whitespace.
 
 </dd>
 
@@ -256,6 +292,7 @@ If you’d like to leave feedback, please
 [orgmode]: http://orgmode.org
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
 [rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
+[rst-line-block]: https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#line-blocks
 [sembr-skills]: https://github.com/sembr/skills
 [semver]: http://semver.org
 [typst]: https://typst.app/docs/reference/syntax/
