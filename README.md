@@ -201,7 +201,7 @@ editors that automatically strip trailing whitespace.
 
 ## About
 
-The Semantic Line Break specification is authored by [Mattt][mattt].
+The Semantic Line Breaks specification is authored by [Mattt][mattt].
 
 This specification is an attempt to encapsulate
 best practices that I've encountered
