@@ -141,6 +141,7 @@ are verified to support semantic line breaks:
 - [AsciiDoc][asciidoc]
 - [CommonMark][commonmark]
 - [Haddock][haddock]
+- [LaTeX][latex]
 - [Markdown][markdown]
 - [MediaWiki][mediawiki]
 - [MultiMarkdown][multimarkdown]
@@ -226,6 +227,7 @@ If you’d like to leave feedback, please
 [commonmark]: http://commonmark.org
 [github-issues]: https://github.com/sembr/specification/issues
 [haddock]: https://www.haskell.org/haddock/doc/html/
+[latex]: https://www.latex-project.org/
 [markdown]: https://daringfireball.net/projects/markdown/
 [mattt]: https://mat.tt
 [mediawiki]: https://www.mediawiki.org/wiki/Help:Formatting
