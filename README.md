@@ -147,6 +147,7 @@ are verified to support semantic line breaks:
 - [MultiMarkdown][multimarkdown]
 - [OrgMode][orgmode]
 - [reStructuredText][restructuredtext]
+- [typst][typst]
 
 </dd>
 
@@ -237,4 +238,5 @@ If you’d like to leave feedback, please
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
 [rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
 [semver]: http://semver.org
+[typst]: https://typst.app/docs/reference/syntax/
 [udhr]: http://www.un.org/en/universal-declaration-human-rights/
