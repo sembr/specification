@@ -180,7 +180,11 @@ allows you to quickly identify content that has not been updated.
 The default Git diff options emphasize line changes
 in a way that may obscure certain revisions to text with semantic line breaks.
 You can pass the `--word-diff` option to the `git diff` command
-for better results:
+for better results.
+
+```shell
+git diff --word-diff
+```
 
 </dd>
 
