@@ -130,10 +130,7 @@ no changes to the source text appear in the final rendered output.
 
 ## FAQ
 
-<dl>
-
-<dt>Which light markup languages support semantic line breaks?</dt>
-<dd>
+### Which light markup languages support semantic line breaks?
 
 The following light markup languages
 are verified to support semantic line breaks:
@@ -149,10 +146,7 @@ are verified to support semantic line breaks:
 - [reStructuredText][restructuredtext]
 - [Typst][typst]
 
-</dd>
-
-<dt>How do I know when to add semantic line breaks?</dt>
-<dd>
+### How do I know when to add semantic line breaks?
 
 Try reading the text out loud,
 as if you were speaking to an audience.
@@ -160,10 +154,7 @@ Anywhere that you pause for emphasis
 or to take a breath
 is usually a good candidate for a semantic line break.
 
-</dd>
-
-<dt>How do I migrate existing prose to use semantic line breaks?</dt>
-<dd>
+### How do I migrate existing prose to use semantic line breaks?
 
 There is no need to rewrite or reformat an entire document all at once.
 The recommended migration path for an existing document
@@ -172,10 +163,7 @@ This is often a great opportunity to make an editorial pass over content
 since the distinctive appearance of text with semantic line breaks
 allows you to quickly identify content that has not been updated.
 
-</dd>
-
-<dt>How do I use semantic line breaks with Git?</dt>
-<dd>
+### How do I use semantic line breaks with Git?
 
 The default Git diff options emphasize line changes
 in a way that may obscure certain revisions to text with semantic line breaks.
@@ -186,10 +174,7 @@ for better results.
 git diff --word-diff
 ```
 
-</dd>
-
-<dt>How do I use semantic line breaks with AI?</dt>
-<dd>
+### How do I use semantic line breaks with AI?
 
 AI coding assistants can apply semantic line breaks on request
 through the [SemBr Agent Skills][sembr-skills],
@@ -202,57 +187,34 @@ and other tools that support the
 npx skills add https://sembr.org
 ```
 
-</dd>
-
-<dt>How do I force a line break?</dt>
-<dd>
+### How do I force a line break?
 
 Some lightweight markup languages provide a dedicated syntax for line breaks,
-some support line breaks using the inline HTML element `<br>`\*,
+some support line breaks using the inline HTML element `<br>`[^1],
 and some do both.
 
-<dl>
+- **AsciiDoc**
+  - **Syntax**: A trailing space followed by a plus sign (`+`)
+  - **Inline HTML**: Not supported
+- **CommonMark**
+  - **Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`)[^2]
+  - **Inline HTML**: Supported
+- **Markdown**
+  - **Syntax**: Two or more trailing spaces (`␣␣`)[^2]
+  - **Inline HTML**: Supported
+- **MediaWiki**
+  - **Syntax**: None
+  - **Inline HTML**: Supported
+- **Org mode**
+  - **Syntax**: Two trailing backslashes (`\\`)
+  - **Inline HTML**: Not supported
+- **reStructuredText**
+  - **Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]
+  - **Inline HTML**: Not supported
 
-<dt>AsciiDoc</dt>
-<dd>**Syntax**: A trailing space followed by a plus sign (`+`)</dd>
-<dd>**Inline HTML**: Not supported</dd>
+[^1]: The _Line Break_ element is represented as an empty tag (`<br>`) in HTML, and either a tag pair (`<br></br>`) or a self-closing tag (`<br />`) in XHTML.
 
-<dt>CommonMark</dt>
-<dd>**Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) \*\*</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>Markdown</dt>
-<dd>**Syntax**: Two or more trailing spaces (`␣␣`) \*\*</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>MediaWiki</dt>
-<dd>**Syntax**: None</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>Org mode</dt>
-<dd>**Syntax**: Two trailing backslashes (`\\`)</dd>
-<dd>**Inline HTML**: Not supported</dd>
-
-<dt>reStructuredText</dt>
-<dd>**Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]</dd>
-<dd>**Inline HTML**: Not supported</dd>
-
-> \*
-> The _Line Break_ element is represented as
-> an empty tag (`<br>`) in HTML,
-> and either a tag pair (`<br></br>`) or
-> a self-closing tag (`<br />`) in XHTML.
-
-> \*\*
-> Although Markdown and CommonMark allow
-> two or more trailing spaces (shown above as `␣␣`)
-> to indicate breaks between consecutive lines,
-> this syntax is incompatible with
-> tools that automatically strip trailing whitespace.
-
-</dd>
-
-</dl>
+[^2]: Although Markdown and CommonMark allow two or more trailing spaces (shown above as `␣␣`) to indicate breaks between consecutive lines, this syntax is incompatible with tools that automatically strip trailing whitespace.
 
 ## About
 
