@@ -147,7 +147,7 @@ are verified to support semantic line breaks:
 - [MultiMarkdown][multimarkdown]
 - [OrgMode][orgmode]
 - [reStructuredText][restructuredtext]
-- [typst][typst]
+- [Typst][typst]
 
 </dd>
 
