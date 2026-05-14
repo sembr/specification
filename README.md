@@ -218,11 +218,11 @@ and some do both.
 <dd>**Inline HTML**: Not supported</dd>
 
 <dt>CommonMark</dt>
-<dd>**Syntax**: A trailing backslash (`\`), or two or more trailing spaces \*\*</dd>
+<dd>**Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) \*\*</dd>
 <dd>**Inline HTML**: Supported</dd>
 
 <dt>Markdown</dt>
-<dd>**Syntax**: Two or more trailing spaces \*\*</dd>
+<dd>**Syntax**: Two or more trailing spaces (`␣␣`) \*\*</dd>
 <dd>**Inline HTML**: Supported</dd>
 
 <dt>MediaWiki</dt>
@@ -245,7 +245,7 @@ and some do both.
 
 > \*\*
 > Although Markdown and CommonMark allow
-> two or more trailing spaces
+> two or more trailing spaces (shown above as `␣␣`)
 > to indicate breaks between consecutive lines,
 > this syntax is incompatible with
 > tools that automatically strip trailing whitespace.
