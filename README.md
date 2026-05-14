@@ -180,10 +180,26 @@ allows you to quickly identify content that has not been updated.
 The default Git diff options emphasize line changes
 in a way that may obscure certain revisions to text with semantic line breaks.
 You can pass the `--word-diff` option to the `git diff` command
-for better results:
+for better results.
 
-```terminal
-$ git diff --word-diff
+```shell
+git diff --word-diff
+```
+
+</dd>
+
+<dt>How do I use semantic line breaks with AI?</dt>
+<dd>
+
+AI coding assistants can apply semantic line breaks on request
+through the [SemBr Agent Skills][sembr-skills],
+which integrate with [Claude Code][claude-code],
+[Cursor][cursor],
+and other tools that support the
+[Agent Skills standard][agent-skills].
+
+```shell
+npx skills add https://sembr.org
 ```
 
 </dd>
@@ -223,9 +239,12 @@ If you’d like to leave feedback, please
 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)][cc-by-4.0]
 
+[agent-skills]: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
 [asciidoc]: http://asciidoc.org
 [cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
+[claude-code]: https://claude.com/claude-code
 [commonmark]: http://commonmark.org
+[cursor]: https://cursor.com
 [github-issues]: https://github.com/sembr/specification/issues
 [haddock]: https://www.haskell.org/haddock/doc/html/
 [latex]: https://www.latex-project.org/
@@ -237,6 +256,7 @@ If you’d like to leave feedback, please
 [orgmode]: http://orgmode.org
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
 [rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
+[sembr-skills]: https://github.com/sembr/skills
 [semver]: http://semver.org
 [typst]: https://typst.app/docs/reference/syntax/
 [udhr]: http://www.un.org/en/universal-declaration-human-rights/
