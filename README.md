@@ -208,17 +208,17 @@ npx skills add https://sembr.org
 <dd>
 
 Some lightweight markup languages provide a dedicated syntax for line breaks,
-some support line breaks using the inline HTML element `<br>`\*,
+some support line breaks using the inline HTML element `<br>`[^1],
 and some do both.
 
 - **AsciiDoc**
   - **Syntax**: A trailing space followed by a plus sign (`+`)
   - **Inline HTML**: Not supported
 - **CommonMark**
-  - **Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) \*\*
+  - **Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`)[^2]
   - **Inline HTML**: Supported
 - **Markdown**
-  - **Syntax**: Two or more trailing spaces (`␣␣`) \*\*
+  - **Syntax**: Two or more trailing spaces (`␣␣`)[^2]
   - **Inline HTML**: Supported
 - **MediaWiki**
   - **Syntax**: None
@@ -230,18 +230,9 @@ and some do both.
   - **Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]
   - **Inline HTML**: Not supported
 
-> \*
-> The _Line Break_ element is represented as
-> an empty tag (`<br>`) in HTML,
-> and either a tag pair (`<br></br>`) or
-> a self-closing tag (`<br />`) in XHTML.
+[^1]: The _Line Break_ element is represented as an empty tag (`<br>`) in HTML, and either a tag pair (`<br></br>`) or a self-closing tag (`<br />`) in XHTML.
 
-> \*\*
-> Although Markdown and CommonMark allow
-> two or more trailing spaces (shown above as `␣␣`)
-> to indicate breaks between consecutive lines,
-> this syntax is incompatible with
-> tools that automatically strip trailing whitespace.
+[^2]: Although Markdown and CommonMark allow two or more trailing spaces (shown above as `␣␣`) to indicate breaks between consecutive lines, this syntax is incompatible with tools that automatically strip trailing whitespace.
 
 </dd>
 
