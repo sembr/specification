@@ -229,7 +229,7 @@ and some do both.
 <dd>**Syntax**: None</dd>
 <dd>**Inline HTML**: Supported</dd>
 
-<dt>OrgMode</dt>
+<dt>Org mode</dt>
 <dd>**Syntax**: Two trailing backslashes (`\\`)</dd>
 <dd>**Inline HTML**: Not supported</dd>
 
