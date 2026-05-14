@@ -211,31 +211,24 @@ Some lightweight markup languages provide a dedicated syntax for line breaks,
 some support line breaks using the inline HTML element `<br>`\*,
 and some do both.
 
-<dl>
-
-<dt>AsciiDoc</dt>
-<dd>**Syntax**: A trailing space followed by a plus sign (`+`)</dd>
-<dd>**Inline HTML**: Not supported</dd>
-
-<dt>CommonMark</dt>
-<dd>**Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) \*\*</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>Markdown</dt>
-<dd>**Syntax**: Two or more trailing spaces (`␣␣`) \*\*</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>MediaWiki</dt>
-<dd>**Syntax**: None</dd>
-<dd>**Inline HTML**: Supported</dd>
-
-<dt>Org mode</dt>
-<dd>**Syntax**: Two trailing backslashes (`\\`)</dd>
-<dd>**Inline HTML**: Not supported</dd>
-
-<dt>reStructuredText</dt>
-<dd>**Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]</dd>
-<dd>**Inline HTML**: Not supported</dd>
+- **AsciiDoc**
+  - **Syntax**: A trailing space followed by a plus sign (`+`)
+  - **Inline HTML**: Not supported
+- **CommonMark**
+  - **Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) \*\*
+  - **Inline HTML**: Supported
+- **Markdown**
+  - **Syntax**: Two or more trailing spaces (`␣␣`) \*\*
+  - **Inline HTML**: Supported
+- **MediaWiki**
+  - **Syntax**: None
+  - **Inline HTML**: Supported
+- **Org mode**
+  - **Syntax**: Two trailing backslashes (`\\`)
+  - **Inline HTML**: Not supported
+- **reStructuredText**
+  - **Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]
+  - **Inline HTML**: Not supported
 
 > \*
 > The _Line Break_ element is represented as
