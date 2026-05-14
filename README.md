@@ -193,24 +193,14 @@ Some lightweight markup languages provide a dedicated syntax for line breaks,
 some support line breaks using the inline HTML element `<br>`[^1],
 and some do both.
 
-- **AsciiDoc**
-  - **Syntax**: A trailing space followed by a plus sign (`+`)
-  - **Inline HTML**: Not supported
-- **CommonMark**
-  - **Syntax**: A trailing backslash (`\`), or two or more trailing spaces (`␣␣`)[^2]
-  - **Inline HTML**: Supported
-- **Markdown**
-  - **Syntax**: Two or more trailing spaces (`␣␣`)[^2]
-  - **Inline HTML**: Supported
-- **MediaWiki**
-  - **Syntax**: None
-  - **Inline HTML**: Supported
-- **Org mode**
-  - **Syntax**: Two trailing backslashes (`\\`)
-  - **Inline HTML**: Not supported
-- **reStructuredText**
-  - **Syntax**: Leading vertical line (`|`) in a [line block][rst-line-block]
-  - **Inline HTML**: Not supported
+| Language | Syntax | Inline HTML |
+| --- | --- | --- |
+| AsciiDoc | A trailing space followed by a plus sign (`+`) | Not supported |
+| CommonMark | A trailing backslash (`\`), or two or more trailing spaces (`␣␣`) | Supported |
+| Markdown | Two or more trailing spaces (`␣␣`)[^2] | Supported |
+| MediaWiki | None | Supported |
+| Org mode | Two trailing backslashes (`\\`) | Not supported |
+| reStructuredText | Leading vertical line (`\|`) in a [line block][rst-line-block] | Not supported |
 
 [^1]: The _Line Break_ element is represented as an empty tag (`<br>`) in HTML, and either a tag pair (`<br></br>`) or a self-closing tag (`<br />`) in XHTML.
 
