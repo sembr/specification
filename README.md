@@ -184,7 +184,14 @@ and other tools that support the
 [Agent Skills standard][agent-skills].
 
 ```shell
+# Claude Code
+/plugin marketplace add sembr/skills
+
+# skills CLI (Claude Code, Cursor, Codex, and many others)
 npx skills add https://sembr.org
+
+# Pi
+pi install git:github.com/sembr/skills
 ```
 
 ### How do I force a line break?
