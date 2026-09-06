@@ -124,6 +124,11 @@ For an **editor**,
 semantic line breaks make it easier to identify grammatical mistakes
 and find opportunities to simplify and clarify without altering original intent.
 
+For a **collaborator**,
+semantic line breaks keep version control history focused:
+a change to one sentence or clause shows up as a change to one line,
+rather than as a reflow of the entire paragraph.
+
 For a **reader**,
 semantic line breaks are entirely invisible —
 no changes to the source text appear in the final rendered output.
@@ -144,6 +149,7 @@ are verified to support semantic line breaks:
 - [MultiMarkdown][multimarkdown]
 - [OrgMode][orgmode]
 - [reStructuredText][restructuredtext]
+- [roff][roff]
 - [Typst][typst]
 
 ### How do I know when to add semantic line breaks?
@@ -153,6 +159,28 @@ as if you were speaking to an audience.
 Anywhere that you pause for emphasis
 or to take a breath
 is usually a good candidate for a semantic line break.
+
+### How do I use semantic line breaks with dashes?
+
+Compatible markup languages join consecutive lines with a space,
+so a line break after an em dash preserves the rendered output
+only when the dash is already set off by spaces:
+
+<pre>
+The food — which was delicious —
+reminded me of home.
+</pre>
+
+If you write em dashes without surrounding spaces,
+keep the dash and the words on either side of it on the same line,
+and break at the next clause or sentence boundary instead:
+
+<pre>
+The food—which was delicious—reminded me of home.
+</pre>
+
+The same applies to a spaced en dash (–),
+which some style guides prefer.
 
 ### How do I migrate existing prose to use semantic line breaks?
 
@@ -193,6 +221,22 @@ npx skills add https://sembr.org
 # Pi
 pi install git:github.com/sembr/skills
 ```
+
+### Are there tools that apply semantic line breaks automatically?
+
+Yes.
+The following community tools insert or check semantic line breaks:
+
+- [sembr][admk-sembr] by admk,
+  a transformer-based line breaker for plain text and LaTeX
+- [readable][readable] by bobheadxi,
+  a Markdown formatter with semantic line breaks
+- [semantic-linefeeds][semantic-linefeeds] by arloliu,
+  a post-edit hook that checks what AI coding agents write
+- [sentence_lines.lua][casile-filter] from CaSILE,
+  a Pandoc filter for English and Turkish prose
+- [semantic-linebreaker][semantic-linebreaker] by waldyrious,
+  a browser-based utility
 
 ### How do I force a line break?
 
@@ -235,8 +279,10 @@ If you’d like to leave feedback, please
 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)][cc-by-4.0]
 
+[admk-sembr]: https://github.com/admk/sembr
 [agent-skills]: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
 [asciidoc]: http://asciidoc.org
+[casile-filter]: https://github.com/sile-typesetter/casile/blob/master/pandoc-filters/sentence_lines.lua
 [cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
 [claude-code]: https://claude.com/claude-code
 [commonmark]: http://commonmark.org
@@ -250,9 +296,13 @@ If you’d like to leave feedback, please
 [multimarkdown]: http://fletcherpenney.net/multimarkdown/
 [one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 [orgmode]: http://orgmode.org
+[readable]: https://github.com/bobheadxi/readable
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
 [rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
+[roff]: https://www.gnu.org/software/groff/manual/groff.html#Filling
 [rst-line-block]: https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#line-blocks
+[semantic-linebreaker]: https://github.com/waldyrious/semantic-linebreaker
+[semantic-linefeeds]: https://github.com/arloliu/semantic-linefeeds
 [sembr-skills]: https://github.com/sembr/skills
 [semver]: http://semver.org
 [typst]: https://typst.app/docs/reference/syntax/
