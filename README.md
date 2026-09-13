@@ -231,6 +231,8 @@ The following community tools insert or check semantic line breaks:
   a transformer-based line breaker for plain text and LaTeX
 - [readable][readable] by bobheadxi,
   a Markdown formatter with semantic line breaks
+- [panache][panache] by jolars,
+  a Markdown, Quarto, and R Markdown formatter with a `semantic` wrap mode
 - [semantic-linefeeds][semantic-linefeeds] by arloliu,
   a post-edit hook that checks what AI coding agents write
 - [sentence_lines.lua][casile-filter] from CaSILE,
@@ -296,6 +298,7 @@ If you’d like to leave feedback, please
 [multimarkdown]: http://fletcherpenney.net/multimarkdown/
 [one-sentence-per-line]: http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 [orgmode]: http://orgmode.org
+[panache]: https://github.com/jolars/panache
 [readable]: https://github.com/bobheadxi/readable
 [restructuredtext]: http://docutils.sourceforge.net/rst.html
 [rfc2119]: https://www.ietf.org/rfc/rfc2119.txt
