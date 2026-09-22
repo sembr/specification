@@ -204,23 +204,29 @@ git diff --word-diff
 
 ### How do I use semantic line breaks with AI?
 
-AI coding assistants can apply semantic line breaks on request
-through the [SemBr Agent Skills][sembr-skills],
-which integrate with [Claude Code][claude-code],
-[Cursor][cursor],
-and other tools that support the
-[Agent Skills standard][agent-skills].
+The [SemBr skill][sembr-skills] helps your coding agent
+apply semantic line breaks to prose.
+It works with agents that support the [Agent Skills standard][agent-skills],
+including Claude Code, Cursor, and Codex.
+
+With Node.js and npm installed,
+run this command in your project directory:
 
 ```shell
-# Claude Code
-/plugin marketplace add sembr/skills
-
-# skills CLI (Claude Code, Cursor, Codex, and many others)
-npx skills add https://sembr.org
-
-# Pi
-pi install git:github.com/sembr/skills
+npx skills add sembr/skills
 ```
+
+The installer lets you select your agent and install the skill for the project.
+Then ask your agent:
+
+```text
+Use sembr-reformat to apply semantic line breaks to README.md.
+Preserve the wording and rendered output.
+```
+
+The [SemBr skills guide][sembr-skills]
+covers agent-specific installation, use across projects,
+updates, removal, and manual setup.
 
 ### Are there tools that apply semantic line breaks automatically?
 
@@ -282,13 +288,11 @@ If you’d like to leave feedback, please
 [Creative Commons Attribution 4.0 International (CC BY 4.0)][cc-by-4.0]
 
 [admk-sembr]: https://github.com/admk/sembr
-[agent-skills]: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+[agent-skills]: https://agentskills.io/home
 [asciidoc]: http://asciidoc.org
 [casile-filter]: https://github.com/sile-typesetter/casile/blob/master/pandoc-filters/sentence_lines.lua
 [cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
-[claude-code]: https://claude.com/claude-code
 [commonmark]: http://commonmark.org
-[cursor]: https://cursor.com
 [github-issues]: https://github.com/sembr/specification/issues
 [haddock]: https://www.haskell.org/haddock/doc/html/
 [latex]: https://www.latex-project.org/
