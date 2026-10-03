@@ -239,6 +239,8 @@ The following community tools insert or check semantic line breaks:
   a Markdown formatter with semantic line breaks
 - [panache][panache] by jolars,
   a Markdown, Quarto, and R Markdown formatter with a `semantic` wrap mode
+- [badness][badness] by jolars,
+  a LaTeX formatter with a `semantic` wrap mode
 - [semantic-linefeeds][semantic-linefeeds] by arloliu,
   a post-edit hook that checks what AI coding agents write
 - [sentence_lines.lua][casile-filter] from CaSILE,
@@ -290,6 +292,7 @@ If you’d like to leave feedback, please
 [admk-sembr]: https://github.com/admk/sembr
 [agent-skills]: https://agentskills.io/home
 [asciidoc]: http://asciidoc.org
+[badness]: https://badness.dev
 [casile-filter]: https://github.com/sile-typesetter/casile/blob/master/pandoc-filters/sentence_lines.lua
 [cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
 [commonmark]: http://commonmark.org
